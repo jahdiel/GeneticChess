@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Flask App - {{title}}</title>  
+  </head>
+  <body>
+    <div id="board"></div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf-8">
+        var socket = io();
+        socket.on('connect', function() {
+          console.log("Connected to WebSockets");
+        });
+        socket.on('chess board', function(msg){
+          console.log('chess board ', msg);
+          var board = document.getElementById("board");   // Create a <button> element
+          board.innerHTML = msg.data;
+        });
+      </script> 
+  </body>
+</html>
