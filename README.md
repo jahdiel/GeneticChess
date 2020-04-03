@@ -12,3 +12,12 @@ The Flask server which runs the genetic algorithm is run with the command:
 In order to see the iterations place in your browser the url:
 
 `http://localhost:5000/`
+
+## Requirements
+
+- python 3
+- flask
+- flask-socketio
+- numpy
+- python-chess
+- eventlet
