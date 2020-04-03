@@ -1,6 +1,6 @@
 # GeneticChess
 
-![8-Queens]('./media/8_queens.png')
+![8-Queens](./media/8_queens.png)
 
 
 ## Run the Algorithm
